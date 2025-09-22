@@ -52,13 +52,13 @@ En este dataset tenemos a 4424 estudiantes con 36 características que los descr
 
 Empezamos por crear un pipeline con StandardScaler como escalador y RidgeClassifier como clasificador, con un límite de iteraciones de 1000 y declaramos random_state a un número cualquiera para reproducción. Con este pipeline vamos a comparar la estabilidad brindada por KFold y StratifiedKFold.
 
-Para KFold declaramos 5 splits, shuffle y random_state a un número cualquiera para reproducción. Para StratifiedKFold hacemos lo mismo. Luego instanciamos cross_val_score con nuestro pipeline, atributos, target y tipo de fold (KFold o StratifiedKFold). Además establecemos scoring por puntería. En este caso obtenemos que StratifiedKFold es más estable, por lo cual es el que vamos a usar para comparar los modelos (Evidencia 1).
+Para KFold declaramos 5 splits, shuffle y random_state a un número cualquiera para reproducción. Para StratifiedKFold hacemos lo mismo. Luego instanciamos cross_val_score con nuestro pipeline, atributos, target y tipo de fold (KFold o StratifiedKFold). Además establecemos scoring por puntería. En este caso obtenemos que StratifiedKFold es más estable, por lo cual es el que vamos a usar para comparar los modelos (Evidencia [1](#evidencia-1)).
 
 Para LogisticRegression setteamos max_iter en 1000 y random_state en 42, para RidgeClassifier setteamos alpha en 1.0 y random_state en 42 y finalmente para RandomForestClassifier setteamos el número de estimadores en 10 y random_state en 42. Con esto armamos nuestras pipelines, declarando StandardScaler como escalador para RidgeClassifier y LogisticRegression. RandomForestClassifier no necesita escalador. Usamos la configuración de StratifiedKFold mencionada más arriba.
 
-Cuando enfrentamos los modelos obtenemos que RandomForestClassifier es el ganador, ya que en promedio es más certero que los demás e incluso su peor caso es mejor que el mejor del RidgeClassifier.
+Cuando enfrentamos los modelos obtenemos que RandomForestClassifier es el ganador, ya que en promedio es más certero que los demás e incluso su peor caso es mejor que el mejor del RidgeClassifier (Evidencia [2](#evidencia-2)).
 
-Ya sabemos que RandomForestClassifier es nuestro mejor modelo para este caso, ahora nos queda optimizar los parámetros para conseguir mejores predicciones. Para hacer esto creamos listas de distintos valores para los parámetros n_estimators, max_depth y min_samples_split, lo cual nos permitirá, con ayuda de GridSearchCV y RandomizedSearchCV, encontrar los valores más óptimos. Adicionalmente a RandomizedSearchCV le pondremos un límite de 20 iteraciones, para reducir tiempos de ejecución.
+Ya sabemos que RandomForestClassifier es nuestro mejor modelo para este caso, ahora nos queda optimizar los parámetros para conseguir mejores predicciones. Para hacer esto creamos listas de distintos valores para los parámetros n_estimators, max_depth y min_samples_split, lo cual nos permitirá, con ayuda de GridSearchCV y RandomizedSearchCV, encontrar los valores más óptimos. Adicionalmente a RandomizedSearchCV le pondremos un límite de 20 iteraciones, para reducir tiempos de ejecución (Evidencia [3](#evidencia-3)).
 
 Después de ejecutar el código tenemos que GridSearchCV probó 36 combinaciones distintas, encontrando que los valores óptimos para max_depth, min_samples_split y n_estimators son None, 5 y 100 respectivamente. Por el otro lado, RandomizedSearchCV probó 20 combinaciones distintas, encontrando 30, 5 y 100 respectivamente. Ambos métodos tienen un score de 0.7783. En este caso podemos darle la preferencia a RandomizedSearchCV por conseguir el mismo puntaje con menos combinaciones probadas.
 
@@ -66,27 +66,27 @@ Finalmente sabemos qué modelo es el mejor para este contexto y con qué paráme
 
 ## **Evidencias**
 
-Evidencia 1
+### Evidencia 1
 
 ![image.png](../assets/ut1_ta4/image.png)
 
-Evidencia 2
+### Evidencia 2
 
 ![image.png](../assets/ut1_ta4/image_1.png)
 
 ![image.png](../assets/ut1_ta4/image_2.png)
 
-Evidencia 3
+### Evidencia 3
 
 ![image.png](../assets/ut1_ta4/image_3.png)
 
-Evidencia 4
+### Evidencia 4
 
 ![image.png](../assets/ut1_ta4/image_4.png)
 
 ![image.png](../assets/ut1_ta4/image_5.png)
 
-Evidencia 5
+### Evidencia 5
 
 ![image.png](../assets/ut1_ta4/image_6.png)
 
@@ -94,9 +94,9 @@ Evidencia 5
 
 Después de mucha puesta a prueba de distintos modelos, parámetros, métodos de segmentación de datos y formas de armar los modelos, tenemos un modelo que predice con casi 80% de puntería, lo cual es satisfactorio. 
 
-Viendo el funcionamiento interno del RandomForestClassifier vemos que los factores más influenciales en determinar que un estudiante dejará los estudios o no son la cantidad de materias aprobadas en el segundo semestre, las notas obtenidas en dicho semestre, la cantidad de materias aprobadas en el primer semestre, las notas obtenidas en dicho semestre y los pagos de tutoría (académicos) que han hecho hasta el momento, entre otros (Evidencia 4).
+Viendo el funcionamiento interno del RandomForestClassifier vemos que los factores más influenciales en determinar que un estudiante dejará los estudios o no son la cantidad de materias aprobadas en el segundo semestre, las notas obtenidas en dicho semestre, la cantidad de materias aprobadas en el primer semestre, las notas obtenidas en dicho semestre y los pagos de tutoría (académicos) que han hecho hasta el momento, entre otros (Evidencia [4](#evidencia-4)).
 
-Separando los factores por categorías vemos que los factores académicos son los más influyentes en si el estudiante abandona sus estudios o no, seguido de los factores económicos y finalmente los factores demográficos (Evidencia 5).
+Separando los factores por categorías vemos que los factores académicos son los más influyentes en si el estudiante abandona sus estudios o no, seguido de los factores económicos y finalmente los factores demográficos (Evidencia [5](#evidencia-5)).
 
 En esta actividad pudimos utilizar la metodología CRISP-DM para entender nuestro dataset y tener una instancia de prueba y error, comparando distintos modelos, configuraciones y métodos para encontrar la combinación que más se acople a nuestra situación y nos de los mejores resultados posibles.
 

@@ -37,29 +37,29 @@ Ambos sets son iguales en estructura, con la diferencia que el training set no t
 
 Con esto en mente, ya podemos armar el ambiente en el cual armamos, entrenamos y probamos el modelo predictivo. Siguiendo la guía y recomendaciones del profesor, armamos el ambiente en Google Colab, guardando los datos en Google Drive y cargando los datos del dataset con la API de Kaggle.
 
-Una vez cargado el dataset, empezamos a indagar en distintos aspectos del mismo. Primero, usando el subset de entrenamiento, vemos que tiene 891 entradas (pasajeros) y 12 columnas (atributos o features, que tenemos 12 en vez de 11 ya que el subset viene con el atributo “survived”, que es el target u objetivo a predecir) (Evidencia 1).
+Una vez cargado el dataset, empezamos a indagar en distintos aspectos del mismo. Primero, usando el subset de entrenamiento, vemos que tiene 891 entradas (pasajeros) y 12 columnas (atributos o features, que tenemos 12 en vez de 11 ya que el subset viene con el atributo “survived”, que es el target u objetivo a predecir) (Evidencia [1](#evidencia-1)).
 
-También podemos ver que de las 12 columnas solo 2 tienen valores nulos o faltantes, siendo estas las columnas de edad y cabinas (la columna que describe de qué puerto embarcó el pasajero tiene solo 2 entradas faltantes, por lo cual, elijo no contarla) (Evidencia 2). Para finalizar nuestro análisis del dataset, vemos que un 61.61% de los pasajeros no sobrevivieron al accidente, mientras que el 38.38% restante si (Evidencia 3).
+También podemos ver que de las 12 columnas solo 2 tienen valores nulos o faltantes, siendo estas las columnas de edad y cabinas (la columna que describe de qué puerto embarcó el pasajero tiene solo 2 entradas faltantes, por lo cual, elijo no contarla) (Evidencia [2](#evidencia-2)). Para finalizar nuestro análisis del dataset, vemos que un 61.61% de los pasajeros no sobrevivieron al accidente, mientras que el 38.38% restante si (Evidencia [3](#evidencia-3)).
 
-Con la comprensión del dataset, su estructura y sus datos, podemos ir adelante con la visualización de los mismos. Tomando el código provisto por el profesor, después de ejecutarlo, tenemos distintas visualizaciones de los datos (Evidencia 4): supervivencia al accidente por sexo, tasa de supervivencia por clase, edad contra supervivencia, y finalmente, una matriz de correlación entre los atributos que hacen referencia hacia si el pasajero sobrevivió o no, la clase en la que viajó el mismo, su edad, la cantidad de hermanos y parejas abordo y la cantidad de padres e hijos abordo.
+Con la comprensión del dataset, su estructura y sus datos, podemos ir adelante con la visualización de los mismos. Tomando el código provisto por el profesor, después de ejecutarlo, tenemos distintas visualizaciones de los datos (Evidencia [4](#evidencia-4)): supervivencia al accidente por sexo, tasa de supervivencia por clase, edad contra supervivencia, y finalmente, una matriz de correlación entre los atributos que hacen referencia hacia si el pasajero sobrevivió o no, la clase en la que viajó el mismo, su edad, la cantidad de hermanos y parejas abordo y la cantidad de padres e hijos abordo.
 
 ## **Evidencias**
 
-**Evidencia 1**
+### Evidencia 1
 
 ![image.png](../assets/ut1_ta1/image.png)
 
-**Evidencia 2**
+### Evidencia 2
 
 ![image1.png](../assets/ut1_ta1/image_1.png)
 
 ![image2.png](../assets/ut1_ta1/image_2.png)
 
-**Evidencia 3**
+### Evidencia 3
 
 ![image3.png](../assets/ut1_ta1/image_3.png)
 
-**Evidencia 4**
+### Evidencia 4
 
 ![image4.png](../assets/ut1_ta1/image_4.png)
 
@@ -69,7 +69,7 @@ Con la comprensión del dataset, su estructura y sus datos, podemos ir adelante 
 
 ![image7.png](../assets/ut1_ta1/image_7.png)
 
-**Evidencia 5**
+### Evidencia 5
 
 ![figure-one-side-view.gif](../assets/ut1_ta1/figure-one-side-view.gif)
 
@@ -77,7 +77,7 @@ Con la comprensión del dataset, su estructura y sus datos, podemos ir adelante 
 
 Para contestar la pregunta original: “¿Qué tipos de personas eran las más probables de sobrevivir?”, apoyándose en la matriz de correlación, tenemos que el atributo que más se relaciona con la supervivencia del pasajero es la clase en la que viajó (inversamente proporcional, mientras menor el número de clase mayor será la probabilidad de sobrevivir), seguido del costo de su pasaje (proporcional, mientras más caro el boleto mayor probabilidades de sobrevivir).
 
-Sin tener el contexto completo se podría creer que el modelo hizo overfitting, adquiriendo un patrón irrelevante y dándole mucho peso para hacer las predicciones. Sin embargo, viendo la distribución de las cabinas por clase de pasajero y las ubicaciones de las escaleras, vemos que los pasajeros en primera clase podían evacuar de manera más rápida que los de segunda y tercera clase. Además del acceso más rápido, podría ser que se les de preferencia a los pasajeros de “clase alta” sobre los demás. Es por todo esto, que tiene sentido la correlación encontrada.
+Sin tener el contexto completo se podría creer que el modelo hizo overfitting, adquiriendo un patrón irrelevante y dándole mucho peso para hacer las predicciones. Sin embargo, viendo la distribución de las cabinas por clase de pasajero y las ubicaciones de las escaleras, vemos que los pasajeros en primera clase podían evacuar de manera más rápida que los de segunda y tercera clase. Además del acceso más rápido, podría ser que se les de preferencia a los pasajeros de “clase alta” sobre los demás (Evidencia [5](#evidencia-5)). Es por todo esto, que tiene sentido la correlación encontrada.
 
 También vemos que los niños (menores a 10 años) tienen mayor probabilidad a sobrevivir, en proporción al resto. Además, vemos que los hombres son 4 veces más probables a no sobrevivir que si hacerlo, mientras que las mujeres son más del doble más probables de sobrevivir que no. Una vez más, tiene sentido, sobre todo por el famoso dicho “mujeres y niños primero”.
 

@@ -38,7 +38,7 @@ DummyClassifier es la otra herramienta que usaremos, que nos permite armar un mo
 
 Luego tenemos train_test_split, que es una función que nos permite separar todo el dataset en varias partes que nos son útiles para entrenar y probar nuestros modelos. Con esta herramienta, podemos tomar el dataset entero (con sus features y target) y separarlo en datos de entrenamiento y prueba. A modo de tener predicciones consistentes (reproducibles), declaramos el valor de random_state a un número cualquiera y usamos stratify para garantizar que la proporción de clases en el subset de entrenamiento y prueba sea parecida.
 
-Finalmente tenemos la función classification_report que nos permite medir la calidad de nuestro modelo con varias métricas. Precision o valor predictivo refiere al porcentaje de las predicciones positivas correctas (Evidencia 1), recall refiere al porcentaje de las instancias positivas que identificó efectivamente (Evidencia 2), F1-score que es como un punto medio entre precision y recall (Evidencia 3) y support que refiere al número de muestras reales de cada clase en el dataset (que tantos datos pertenecen a esa clase).
+Finalmente tenemos la función classification_report que nos permite medir la calidad de nuestro modelo con varias métricas. Precision o valor predictivo refiere al porcentaje de las predicciones positivas correctas (Evidencia [1](#evidencia-1)), recall refiere al porcentaje de las instancias positivas que identificó efectivamente (Evidencia [2](#evidencia-2)), F1-score que es como un punto medio entre precision y recall (Evidencia [3](#evidencia-3)) y support que refiere al número de muestras reales de cada clase en el dataset (que tantos datos pertenecen a esa clase).
 
 Con esto en mente podemos empezar a preparar los datos para entrenar los modelos, comenzando por tratar con los valores faltantes o nulos. En la actividad pasada vimos como habían atributos con valores faltantes, los cuales son cabina (que no nos interesa, ya que no hay ninguna cabina que tenga una ventaja por el resto de las demás, y podemos categorizar las cabinas según su ubicación con la clase en la que viaja el pasajero) y edad.
 
@@ -68,25 +68,25 @@ Finalmente con todos los atributos necesarios podemos armar nuestros modelos, ma
 
 ## **Evidencias**
 
-Evidencia 1
+### Evidencia 1
 
 ![image.png](../assets/ut1_ta2/image.png)
 
-Evidencia 2
+### Evidencia 2
 
 ![image.png](../assets/ut1_ta2/image_1.png)
 
-Evidencia 3
+### Evidencia 3
 
 ![image.png](../assets/ut1_ta2/image_2.png)
 
-Evidencia 4
+### Evidencia 4
 
 ![image.png](../assets/ut1_ta2/image_3.png)
 
 ## **Reflexión**
 
-Gracias al feature engineering que hicimos, junto con las mediciones de calidad y comparación a un baseline, podemos ver que nuestro modelo puede predecir efectivamente (con un margen de error razonable) si un pasajero sobreviviría al accidente o no (Evidencia 4). Vemos que la puntería de las predicciones del modelo mejora en comparación con su baseline. Además vemos que identifica correctamente un 80% de las veces el resultado correcto (si efectivamente sobreviviría o no) y que su f1-score es de 80% también. 
+Gracias al feature engineering que hicimos, junto con las mediciones de calidad y comparación a un baseline, podemos ver que nuestro modelo puede predecir efectivamente (con un margen de error razonable) si un pasajero sobreviviría al accidente o no (Evidencia [4](#evidencia-4)). Vemos que la puntería de las predicciones del modelo mejora en comparación con su baseline. Además vemos que identifica correctamente un 80% de las veces el resultado correcto (si efectivamente sobreviviría o no) y que su f1-score es de 80% también. 
 
 Para esta actividad lo tomaremos como un rendimiento satisfactorio, ya que querer mejorarlo puede significar demasiado trabajo para poca mejora, o correr el peligro de caer en patrones de overfitting, dando la ilusión de una mejoría cuando no la hay.
 

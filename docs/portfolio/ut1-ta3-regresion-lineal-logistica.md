@@ -41,7 +41,7 @@ Empezamos la actividad importando las herramientas que vamos a necesitar y los d
 
 Luego podemos cargar los datos de las casas de Boston y ver su estructura y contenidos. Es un dataset con 506 casas y 14 atributos distintos, dentro de los cuales tenemos el índice de crimen, porcentaje del terreno residencial zonificado, antigüedad de la vivienda y demás. Nuestro objetivo es medv, que refiere al valor mediano de las viviendas en miles de dólares.
 
-Para este caso vamos a usar la regresión lineal, el cual es un modelo que tiene forma de recta (Evidencia 1). La esencia de este modelo es que se tienen varios factores a ajustar: el sesgo (o bias) que es el factor independiente y los pesos (o weights) (Evidencia 2). Durante el entrenamiento, el modelo se irá ajustando a sí mismo para que la distancia entre él mismo y el dato real sea la mínima. Esta distancia es el error, mientras la distancia entre el modelo y el dato se reducen, lo hace también el error. Para las predicciones complejas, como es este caso, no hay un solo factor que influya en el precio de la venta de una casa, por lo tanto nuestro modelo tendrá múltiples atributos que manejar. Vale la pena aclarar que todo el ajuste interno de los pesos y sesgos es hecho automáticamente por el modelo, nosotros solo debemos instanciarlo y darle la información con la cual será entrenado y probado.
+Para este caso vamos a usar la regresión lineal, el cual es un modelo que tiene forma de recta (Evidencia [1](#evidencia-1)). La esencia de este modelo es que se tienen varios factores a ajustar: el sesgo (o bias) que es el factor independiente y los pesos (o weights) (Evidencia [2](#evidencia-2)). Durante el entrenamiento, el modelo se irá ajustando a sí mismo para que la distancia entre él mismo y el dato real sea la mínima. Esta distancia es el error, mientras la distancia entre el modelo y el dato se reducen, lo hace también el error. Para las predicciones complejas, como es este caso, no hay un solo factor que influya en el precio de la venta de una casa, por lo tanto nuestro modelo tendrá múltiples atributos que manejar. Vale la pena aclarar que todo el ajuste interno de los pesos y sesgos es hecho automáticamente por el modelo, nosotros solo debemos instanciarlo y darle la información con la cual será entrenado y probado.
 
 Con esto en mente ya podemos entrenar y probar nuestro modelo. Para medir qué tan bueno es usamos múltiples métricas, como el error absoluto medio (media aritmética), error cuadrado medio, raíz del error cuadrático, coeficiente de determinación y error porcentual absoluto. Las usamos todas ya que distintas métricas tienen ciertos comportamientos ante ciertas situaciones, por ejemplo, el error absoluto medio no es tan afectado si hay un valor disparado de lo usual o esperado (outlier) mientras que el error cuadrado medio si lo es. Según si nos importa penalizar o no a los outliers, le prestaremos más atención a uno que al otro.
 
@@ -51,19 +51,19 @@ A diferencia del caso anterior con la regresión lineal, no podemos calcular un 
 
 ## **Evidencias**
 
-Evidencia 1
+### Evidencia 1
 
 ![image.png](../assets/ut1_ta3/image.png)
 
-Evidencia 2
+### Evidencia 2
 
 ![image.png](../assets/ut1_ta3/image_1.png)
 
-Evidencia 3
+### Evidencia 3
 
 ![image.png](../assets/ut1_ta3/image_2.png)
 
-Evidencia 4
+### Evidencia 4
 
 ![image.png](../assets/ut1_ta3/image_3.png)
 
@@ -71,9 +71,9 @@ Evidencia 4
 
 En esta actividad usamos distintos modelos de Machine Learning para resolver problemas de naturalezas distintas: predicción numérica y predicción predicción clasificatoria.
 
-En el primer caso vemos que las predicciones del modelo suelen equivocarse en un margen de $3.19k, con un error porcentual absoluto de 16.9%, explicando 66.9% de la variabilidad (Evidencia 3). Podemos concluir con que el modelo tiene un rendimiento satisfactorio.
+En el primer caso vemos que las predicciones del modelo suelen equivocarse en un margen de $3.19k, con un error porcentual absoluto de 16.9%, explicando 66.9% de la variabilidad (Evidencia [3](#evidencia-3)). Podemos concluir con que el modelo tiene un rendimiento satisfactorio.
 
-En el segundo caso tenemos que el modelo predice con 95.6% de exactitud, 94.6% de precisión, una sensibilidad de 98.6% y un puntaje F1 de 96.6% (Evidencia 4). Esto quiere decir que el modelo es extremadamente bueno, o por lo menos eso parece ser con estos datos de entrenamiento y prueba. Quizá sea realmente muy bueno, pero vale la pena considerar que haya ocurrido un caso de overfitting. Para poner esto a prueba se deberían conseguir más datos para predecir y ver su rendimiento en estos datos nuevos, no vistos anteriormente. Una predicción errónea es especialmente costosa, ya que conlleva un tratamiento equivocado a una persona que le puede costar la vida.
+En el segundo caso tenemos que el modelo predice con 95.6% de exactitud, 94.6% de precisión, una sensibilidad de 98.6% y un puntaje F1 de 96.6% (Evidencia [4](#evidencia-4)). Esto quiere decir que el modelo es extremadamente bueno, o por lo menos eso parece ser con estos datos de entrenamiento y prueba. Quizá sea realmente muy bueno, pero vale la pena considerar que haya ocurrido un caso de overfitting. Para poner esto a prueba se deberían conseguir más datos para predecir y ver su rendimiento en estos datos nuevos, no vistos anteriormente. Una predicción errónea es especialmente costosa, ya que conlleva un tratamiento equivocado a una persona que le puede costar la vida.
 
 En esta actividad aplicamos la metodología CRISP-DM para investigar dos datasets distintos, entender la información que representan y armar modelos de Machine Learning que sean capaces de hacer predicciones. Pudimos evaluar a dichos modelos y sacar conclusiones acerca de su rendimiento y calidad, generando valor para las distintas partes interesadas en los distintos contextos.
 

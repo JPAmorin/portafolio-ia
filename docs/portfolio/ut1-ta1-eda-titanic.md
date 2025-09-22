@@ -51,23 +51,23 @@ Con la comprensión del dataset, su estructura y sus datos, podemos ir adelante 
 
 **Evidencia 2**
 
-![image1.png](../assets/image1.png)
+![image1.png](../assets/image_1.png)
 
-![image2.png](../assets/image2.png)
+![image2.png](../assets/image_2.png)
 
 **Evidencia 3**
 
-![image3.png](../assets/image3.png)
+![image3.png](../assets/image_3.png)
 
 **Evidencia 4**
 
-![image4.png](../assets/image4.png)
+![image4.png](../assets/image_4.png)
 
-![image5.png](../assets/image5.png)
+![image5.png](../assets/image_5.png)
 
-![image6.png](../assets/image6.png)
+![image6.png](../assets/image_6.png)
 
-![image7.png](../assets/image7.png)
+![image7.png](../assets/image_7.png)
 
 **Evidencia 5**
 

@@ -45,33 +45,33 @@ Con la comprensión del dataset, su estructura y sus datos, podemos ir adelante 
 
 ## **Evidencias**
 
-Evidencia 1
+**Evidencia 1**
 
-![image.png](image.png)
+![image.png](../assets/ut1_ta1/image.png)
 
-Evidencia 2
+**Evidencia 2**
 
-![image.png](image%201.png)
+![image1.png](../assets/ut1_ta1/image_1.png)
 
-![image.png](image%202.png)
+![image2.png](../assets/ut1_ta1/image_2.png)
 
-Evidencia 3
+**Evidencia 3**
 
-![image.png](image%203.png)
+![image3.png](../assets/ut1_ta1/image_3.png)
 
-Evidencia 4
+**Evidencia 4**
 
-![image.png](image%204.png)
+![image4.png](../assets/ut1_ta1/image_4.png)
 
-![image.png](image%205.png)
+![image5.png](../assets/ut1_ta1/image_5.png)
 
-![image.png](image%206.png)
+![image6.png](../assets/ut1_ta1/image_6.png)
 
-![image.png](image%207.png)
+![image7.png](../assets/ut1_ta1/image_7.png)
 
-Evidencia 5
+**Evidencia 5**
 
-![figure-one-side-view.gif](figure-one-side-view.gif)
+![figure-one-side-view.gif](../assets/ut1_ta1/figure-one-side-view.gif)
 
 ## **Reflexión**
 

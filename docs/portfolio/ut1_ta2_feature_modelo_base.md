@@ -74,15 +74,15 @@ Evidencia 1
 
 Evidencia 2
 
-![image.png](../assets/ut1_ta2/image_01.png)
+![image.png](../assets/ut1_ta2/image_1.png)
 
 Evidencia 3
 
-![image.png](../assets/ut1_ta2/image_02.png)
+![image.png](../assets/ut1_ta2/image_2.png)
 
 Evidencia 4
 
-![image.png](../assets/ut1_ta2/image_03.png)
+![image.png](../assets/ut1_ta2/image_3.png)
 
 ## **Reflexión**
 

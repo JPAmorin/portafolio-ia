@@ -41,7 +41,7 @@ En esta actividad final de la primera unidad del curso analizaremos el dataset d
     - **Paso 2.15: Preparación del Dataset Final (15 min)**
     - **Paso 2.16: Verificación de Calidad de Datos (15 min)**
     - **Paso 2.17: Análisis de Escalas (Pre-Normalización) (10 min)**
-- **FASE 3: DATA PREPARATION**
+- **FASE 3: DATA PREPARATION (30 min)**
     - **Paso 3.1: Setup para Normalización (30 min)**
         - **Paso 3.1.2: Aplicar los 3 Scalers (5 min)**
         - **Paso 3.1.3: Comparación Visual - Boxplots (5 min)**

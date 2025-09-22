@@ -68,27 +68,27 @@ Finalmente sabemos qué modelo es el mejor para este contexto y con qué paráme
 
 Evidencia 1
 
-![image.png](../assets/ut1_ta3/image.png)
+![image.png](../assets/ut1_ta4/image.png)
 
 Evidencia 2
 
-![image.png](../assets/ut1_ta3/image_1.png)
+![image.png](../assets/ut1_ta4/image_1.png)
 
-![image.png](../assets/ut1_ta3/image_2.png)
+![image.png](../assets/ut1_ta4/image_2.png)
 
 Evidencia 3
 
-![image.png](../assets/ut1_ta3/image_3.png)
+![image.png](../assets/ut1_ta4/image_3.png)
 
 Evidencia 4
 
-![image.png](../assets/ut1_ta3/image_4.png)
+![image.png](../assets/ut1_ta4/image_4.png)
 
-![image.png](../assets/ut1_ta3/image_5.png)
+![image.png](../assets/ut1_ta4/image_5.png)
 
 Evidencia 5
 
-![image.png](../assets/ut1_ta3/image_6.png)
+![image.png](../assets/ut1_ta4/image_6.png)
 
 ## **Reflexión**
 

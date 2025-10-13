@@ -15,4 +15,5 @@ Bienvenido a las entradas del portafolio. Us√° la plantilla para crear nuevas p√
 - UT1-TA3-Regresion-Lineal-Logistica:[ut1-ta3-regresion-lineal-logistica.md](ut1-ta3-regresion-lineal-logistica.md)
 - UT1-TA4-Validacion-y-Seleccion-de-Modelos:[ut1-ta4-validacion-y-seleccion-de-modelos.md](ut1-ta4-validacion-y-seleccion-de-modelos.md)
 - UT1-TA6-Clustering-y-PCA:[ut1-ta6-clustering-pca.md](ut1-ta6-clustering-pca.md)
-
+- Limitaciones-del-Perceptron-y-Pasaje-a-Redes-Neuronales:[Limitaciones-del-Perceptron-y-Pasaje-a-Redes-Neuronales.md](Limitaciones-del-Perceptron-y-Pasaje-a-Redes-Neuronales.md)
+- Optimizacion-de-Redes-Neuronales:[Optimizacion-de-Redes-Neuronales.md](Optimizacion-de-Redes-Neuronales.md)

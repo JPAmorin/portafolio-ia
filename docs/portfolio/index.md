@@ -17,3 +17,7 @@ Bienvenido a las entradas del portafolio. Us√° la plantilla para crear nuevas p√
 - UT1-TA6-Clustering-y-PCA:[ut1-ta6-clustering-pca.md](ut1-ta6-clustering-pca.md)
 - Limitaciones-del-Perceptron-y-Pasaje-a-Redes-Neuronales:[Limitaciones-del-Perceptron-y-Pasaje-a-Redes-Neuronales.md](Limitaciones-del-Perceptron-y-Pasaje-a-Redes-Neuronales.md)
 - Optimizacion-de-Redes-Neuronales:[Optimizacion-de-Redes-Neuronales.md](Optimizacion-de-Redes-Neuronales.md)
+- Redes-Neuronales-Convolucionales-y-Transfer-Learning:[Redes-Neuronales-Convolucionales-y-Transfer-Learning.md](Redes-Neuronales-Convolucionales-y-Transfer-Learning.md)
+- Data-Augmentation-y-Clasificacion-de-Flores:[Data-Augmentation-y-Clasificacion-de-Flores.md](Data-Augmentation-y-Clasificacion-de-Flores.md)
+- SAM-para-monitoreo-de-desastres-y-respuesta-a-emergencias:[SAM-para-monitreo-de-desastres-y-respuesta-a-emer.md](SAM-para-monitreo-de-desastres-y-respuesta-a-emer.md)
+- YOLO-y-Norfair-deteccion-y-tracking-de-frutas:[YOLO-y-Norfair,-deteccion-y-tracking-de-frutas.md](YOLO-y-Norfair,-deteccion-y-tracking-de-frutas.md)

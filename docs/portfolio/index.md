@@ -21,3 +21,6 @@ Bienvenido a las entradas del portafolio. Us√° la plantilla para crear nuevas p√
 - Data-Augmentation-y-Clasificacion-de-Flores:[Data-Augmentation-y-Clasificacion-de-Flores.md](Data-Augmentation-y-Clasificacion-de-Flores.md)
 - SAM-para-monitoreo-de-desastres-y-respuesta-a-emergencias:[SAM-para-monitreo-de-desastres-y-respuesta-a-emer.md](SAM-para-monitreo-de-desastres-y-respuesta-a-emer.md)
 - YOLO-y-Norfair-deteccion-y-tracking-de-frutas:[YOLO-y-Norfair,-deteccion-y-tracking-de-frutas.md](YOLO-y-Norfair,-deteccion-y-tracking-de-frutas.md)
+- Ajuste-Fino-de-Transformadores-para-Clasificacion:[Ajuste-Fino-de-Transformadores-para-Clasificacion.md](Ajuste-Fino-de-Transformadores-para-Clasificacion.md)
+- Modelos-de-Lenguaje-Prompting-Plantillas-y-Salida-Estructurada:[Modelos-de-Lenguaje-Prompting-Plantillas-y-Salida-Estructurada.md](Modelos-de-Lenguaje-Prompting-Plantillas-y-Salida-Estructurada.md)
+- Creacion-de-un-Agente-de-Inteligencia-Artificial:[Creacion-de-un-Agente-de-Inteligencia-Artificial.md](Creacion-de-un-Agente-de-Inteligencia-Artificial.md)

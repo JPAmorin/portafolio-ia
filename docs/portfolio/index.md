@@ -24,3 +24,5 @@ Bienvenido a las entradas del portafolio. Us√° la plantilla para crear nuevas p√
 - Ajuste-Fino-de-Transformadores-para-Clasificacion:[Ajuste-Fino-de-Transformadores-para-Clasificacion.md](Ajuste-Fino-de-Transformadores-para-Clasificacion.md)
 - Modelos-de-Lenguaje-Prompting-Plantillas-y-Salida-Estructurada:[Modelos-de-Lenguaje-Prompting-Plantillas-y-Salida-Estructurada.md](Modelos-de-Lenguaje-Prompting-Plantillas-y-Salida-Estructurada.md)
 - Creacion-de-un-Agente-de-Inteligencia-Artificial:[Creacion-de-un-Agente-de-Inteligencia-Artificial.md](Creacion-de-un-Agente-de-Inteligencia-Artificial.md)
+- Introduccion-a-Google-Cloud-para-Machine-Learning:[Introduccion-a-Google-Cloud-para-Machine-Learning-2bc34a4136c180c7b4e2c47c6777d2b6.md](Introduccion-a-Google-Cloud-para-Machine-Learning-2bc34a4136c180c7b4e2c47c6777d2b6.md)
+- Creacion-de-Pipelines-con-VertexAI-en-Google-Cloud:[Creacion-de-Pipelines-con-VertexAI-en-Google-Cloud-2bc34a4136c180e2957ac6edf007e403.md](Creacion-de-Pipelines-con-VertexAI-en-Google-Cloud-2bc34a4136c180e2957ac6edf007e403.md)

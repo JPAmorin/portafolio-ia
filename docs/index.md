@@ -1,13 +1,14 @@
 ---
-title: "Portafolio — Inicio"
-date: 2025-01-01
+title: "Portafolio Juan Pablo Amorín"
+date: 2025-12-01
 ---
 
 # Portafolio — Inicio
 
-Bienvenido al portafolio del curso. Aquí documentarás tu progreso,
-evidencias y reflexiones a lo largo del semestre.
+Bienvenidos al portafolio del curso. A lo largo de este curso fuimos adentrándonos en el mundo de la Inteligencia Artificial, empezando por el Machine Learning Clásico, siguiendo por las Redes Neuronales y el Deep Lerning. Luego vimos Computer Vision y Agentes. Finalmente vimos MLOps.
+Aquí podés acceder al índice de todos los informes realizados durante el curso en la carpeta de portafolio:
 
-- Revisa la sección "Acerca de mí" para presentarte.
-- Crea entradas en `Portfolio` usando la plantilla provista.
-- Mantén objetivos, actividades y evidencias claros por entrada.
+- [Índice del Portafolio](portfolio/index.md)
+
+En ese índice vas a encontrar los enlaces a cada uno de los informes/prácticos desarrollados, donde se detallan las actividades, análisis y resultados alcanzados a lo largo del curso.
+
